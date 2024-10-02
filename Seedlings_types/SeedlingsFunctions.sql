@@ -1,0 +1,10 @@
+-- GET ALL SEEDLING TYPES FUNCTION
+CREATE OR ALTER FUNCTION GetAllSeedlingsTypes()
+RETURNS TABLE
+AS
+RETURN (
+    SELECT * FROM Seedlings_types
+);
+
+
+SELECT * FROM dbo.GetAllSeedlingsTypes();
